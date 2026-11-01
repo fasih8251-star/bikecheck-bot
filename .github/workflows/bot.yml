@@ -10,7 +10,7 @@ jobs:
           python-version: '3.11'
       - name: Start Bot
         env:
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          TOKEN: ${{ secrets.DISCORD_TOKEN }}
         run: |
           pip install -r requirements.txt
           python main.py
